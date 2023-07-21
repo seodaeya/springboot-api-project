@@ -18,7 +18,13 @@ repositories {
 dependencies {
 	// spring
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	// json
+	implementation 'com.google.code.gson:gson:2.10.1'
 }
 
 tasks.named('test') {
